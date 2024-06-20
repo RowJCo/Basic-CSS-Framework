@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-sheet.css">
+        <title>Basic Style Sheet</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Basic CSS Framework</h1>
+        </header>
+        <main>
+          <article>
+            <p>This is a page to show how the Basic CSS Framework styles webpages.All examples below are from the MDN Web Docs(https://developer.mozilla.org/en-US/docs/Web/HTML/Element)</p>
+          </article>
+
+          <article>
+            <h2>Address</h2>
+            <div>
+              <p>Contact the author of this page:</p>
+              <address>
+                <a href="mailto:jim@example.com">jim@example.com</a><br />
+                <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+              </address>
+            </div>
+          </article>
+
+          <article>
+            <h2>Aside</h2>
+            <div>
+              <p>
+                Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval
+                and adult forms.
+              </p>
+              
+              <aside>
+                <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+              </aside>
+              
+              <p>
+                Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the
+                Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and
+                other small creatures.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <h2>Headings</h2>
+            <div>
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+
+              <h2>Hgroup</h2>
+              <p>This groups Headings together</p>
+            </div>
+            <div>
+              <hgroup>
+                <h1>Frankenstein</h1>
+                <p>Or: The Modern Prometheus</p>
+              </hgroup>
+              <p>
+                Victor Frankenstein, a Swiss scientist, has a great ambition: to create intelligent life. But when his creature first
+                stirs, he realizes he has made a monster. A monster which, abandoned by his master and shunned by everyone who sees
+                it, follows Dr Frankenstein to the very ends of the earth.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <h2>Nav</h2>
+            <div>
+              <nav class="crumbs">
+                <ol>
+                  <li class="crumb"><a href="#">Bikes</a></li>
+                  <li class="crumb"><a href="#">BMX</a></li>
+                  <li class="crumb">Jump Bike 3000</li>
+                </ol>
+              </nav>
+            </div>
+          </article>
+
+          <article>
+            <h2>Search</h2>
+            <div>
+              <h3>Movie website</h3>
+              <search>
+                <form action="./search/">
+                  <label for="movie">Find a Movie</label>
+                  <input type="search" id="movie" name="q" />
+                  <button type="submit">Search</button>
+                </form>
+              </search>
+            </div>
+          </article>
+
+          <article>
+            <h2>List</h2>
+            <div>
+              <h3>Unordered List</h3>
+              <ul>
+                <li>Milk</li>
+                <li>
+                  Cheese
+                  <ul>
+                    <li>Blue cheese</li>
+                    <li>Feta</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Ordered List</h3>
+              <ol>
+                <li>Mix flour, baking powder, sugar, and salt.</li>
+                <li>In another bowl, mix eggs, milk, and oil.</li>
+                <li>Stir both mixtures together.</li>
+                <li>Fill muffin tray 3/4 full.</li>
+                <li>Bake for 20 minutes.</li>
+              </ol>              
+            </div>
+
+            <div>
+              <h3>Definition List</h3>
+              <p>Cryptids of Cornwall:</p>
+              <dl>
+                <dt>Beast of Bodmin</dt>
+                <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+                <dt>Morgawr</dt>
+                <dd>A sea serpent.</dd>
+
+                <dt>Owlman</dt>
+                <dd>A giant owl-like creature.</dd>
+              </dl>
+            </div>
+
+            <div>
+              <h3>Menu (the same as an unordered list but with a different element name)</h3>
+              <menu>
+                <li><button id="save">Save for later</button></li>
+                <li><button id="share">Share this news</button></li>
+              </menu>
+            </div>
+          </article>
+
+          <article>
+            <h2>Text and Inline Semantics</h2>
+            <div>
+              <h3>Paragraphs</h3>
+              <p>
+                Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.
+              </p>
+              <p>Some species live in houses where they hunt insects attracted by artificial light.</p>
+            </div>
+
+            <div>
+              <h3>Anchor</h3>
+              <p>You can reach Michael at:</p>
+              <ul>
+                <li><a href="https://example.com">Website</a></li>
+                <li><a href="mailto:m.bluth@example.com">Email</a></li>
+                <li><a href="tel:+123456789">Phone</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Abbreviation</h3>
+              <p>
+                You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style your <abbr>HTML</abbr> (HyperText Markup Language).
+                Using style sheets, you can keep your <abbr>CSS</abbr> presentation layer and <abbr>HTML</abbr> content layer
+                separate. This is called "separation of concerns."
+              </p>
+            </div>
+
+            <div>
+              <h3>Bold</h3>
+              <p>
+                The two most popular science courses offered by the school are <b class="term">chemistry</b> (the study of chemicals
+                and the composition of substances) and <b class="term">physics</b> (the study of the nature and properties of matter
+                and energy).
+              </p>
+            </div>
+
+            <div>
+              <h3>Linebreak</h3>
+              <p>
+                O’er all the hilltops<br />
+                Is quiet now,<br />
+                In all the treetops<br />
+                Hearest thou<br />
+                Hardly a breath;<br />
+                The birds are asleep in the trees:<br />
+                Wait, soon like these<br />
+                Thou too shalt rest.
+              </p>
+            </div>
+
+            <div>
+              <h3>Citation</h3>
+              <figure>
+                <blockquote>
+                  <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+                </blockquote>
+                <figcaption>
+                  First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George
+                  Orwell (Part 1, Chapter 1).
+                </figcaption>
+              </figure>
+            </div>
+
+            <div>
+              <h3>Inline Code</h3>
+              <p>
+                The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the
+                array.
+              </p>
+            </div>
+
+            <div>
+              <h3>Data</h3>
+              <p>New Products:</p>
+              <ul>
+                <li><data value="398">Mini Ketchup</data></li>
+                <li><data value="399">Jumbo Ketchup</data></li>
+                <li><data value="400">Mega Jumbo Ketchup</data></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Definition</h3>
+              <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+            </div>
+
+            <div>
+              <h3>Emphasis</h3>
+              <p>Get out of bed <em>now</em>!</p>
+              <p>We <em>had</em> to do something about it.</p>
+              <p>This is <em>not</em> a drill!</p>
+            </div>
+
+            <div>
+              <h3>Idiomatic Text</h3>
+              <p>I looked at it and thought <i>This can't be real!</i></p>
+              <p><i>Musa</i> is one of two or three genera in the family <i>Musaceae</i>; it includes bananas and plantains.</p>
+              <p>
+                The term <i>bandwidth</i> describes the measure of how much information can pass through a data connection in a given
+                amount of time.
+              </p>
+            </div>
+
+            <div>
+              <h3>Keyboard Input</h3>
+              <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+            </div>
+
+            <div>
+              <h3>Highlight</h3>
+              <p>Search results for "salamander":</p>
+              <hr />
+              <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+              <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+            </div>
+
+            <div>
+              <h3>Inline Quotation</h3>
+              <p>
+                When Dave asks HAL to open the pod bay door, HAL answers:
+                <q cite="https://www.imdb.com/title/tt0062622/quotes/?item=qt0396921&ref_=ext_shr_lnk">
+                  I'm sorry, Dave. I'm afraid I can't do that.
+                </q>
+              </p>              
+            </div>
+
+            <div>
+              <h3>Strikethrough</h3>
+              <p><s>There will be a few tickets available at the box office tonight.</s></p>
+              <p>SOLD OUT!</p>
+            </div>
+
+            <div>
+              <h3>Sample Output</h3>
+              <p>I was trying to boot my computer, but I got this hilarious message:</p>
+              <p><samp>Keyboard not found <br />Press F1 to continue</samp></p>
+            </div>
+
+            <div>
+              <h3>Small</h3>
+              <p>MDN Web Docs is a learning platform for Web technologies and the software that powers the Web.</p>
+              <hr />
+              <p><small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small></p>
+            </div>
+
+            <div>
+              <h3>Span</h3>
+              <p>
+                Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and
+                <span class="ingredient">garlic</span> to a blender and blend into a paste.
+              </p>
+              <p>Gradually add the <span class="ingredient">olive oil</span> while running the blender slowly.</p>
+            </div>
+
+            <div>
+              <h3>Strong</h3>
+              <p>
+                ... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much he begs:
+                <strong>never feed him after midnight</strong>.
+              </p>
+            </div>
+
+            <div>
+              <h3>Subscript</h3>
+              <p>
+                Almost every developer's favorite molecule is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as
+                "caffeine."
+              </p>              
+            </div>
+
+            <div>
+              <h3>Superscript</h3>
+              <p>The <em>Pythagorean theorem</em> is often expressed as the following equation:</p>
+
+              <p>
+              <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var>
+              </p>
+            </div>
+
+            <div>
+              <h3>Time</h3>
+              <p>The <em>Pythagorean theorem</em> is often expressed as the following equation:</p>
+
+              <p>
+              <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var>
+              </p>
+            </div>
+
+            <div>
+              <h3>Unarticulated Annotation</h3>
+              <p>You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.</p>
+            </div>
+
+            <div>
+              <h3>Variable</h3>
+              <p>
+                The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length,
+                <var>w</var> the width and <var>h</var> the height of the box.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <h2>Image and Multimedia</h2>
+            <div>
+              <h3>Audio</h3>
+              <figure>
+                <figcaption>Listen to the T-Rex:</figcaption>
+                <audio controls src="./media/cc0-audio/t-rex-roar.mp3"></audio>
+                <a href="./media/cc0-audio/t-rex-roar.mp3"> Download audio </a>
+              </figure>
+            </div>
+
+            <div>
+              <h3>Image Embed</h3>
+              <img
+              class="fit-picture"
+              src="./media/cc0-images/grapefruit-slice-332-332.jpg"
+              alt="Grapefruit slice atop a pile of other slices" />
+            </div>
+
+            <div>
+              <h3>Video</h3>
+              <video controls width="250">
+                <source src="./media/cc0-videos/flower.webm" type="video/webm" />
+              
+                <source src="./media/cc0-videos/flower.mp4" type="video/mp4" />
+              
+                Download the
+                <a href="./media/cc0-videos/flower.webm">WEBM</a>
+                or
+                <a href="./media/cc0-videos/flower.mp4">MP4</a>
+                video.
+              </video>
+            </div>
+          </article>
+
+          <article>
+            <h2>Embedded content</h2>
+            <div>
+              <h3>Embed</h3>
+              <embed type="video/webm" src="./media/cc0-videos/flower.mp4" width="250" height="200" />
+            </div>
+
+            <div>
+              <h3>Iframe</h3>
+              <iframe
+                id="inlineFrameExample"
+                title="Inline Frame Example"
+                width="300"
+                height="200"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+              </iframe>
+            </div>
+
+            <div>
+              <h3>Object</h3>
+              <object type="application/pdf" data="./media/examples/In-CC0.pdf" width="250" height="200"></object>
+            </div>
+
+            <div>
+              <h3>Picture</h3>
+              <picture>
+                <source srcset="./media/cc0-images/surfer-240-200.jpg" media="(orientation: portrait)" />
+                <img src="./media/cc0-images/painted-hand-298-332.jpg" alt="" />
+              </picture>
+            </div>
+
+            <div>
+              <h3>Portal</h3>
+              <portal id="exampleportal" src="github page link"></portal>
+            </div>
+          </article>
+
+          <article>
+            <h2>Demarcating Edits</h2>
+            <div>
+              <h3>Insertion and Deletion</h3>
+              <blockquote>
+                There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes
+                it so.
+              </blockquote>              
+            </div>
+          </article>
+
+          <article>
+            <h2>Table</h2>
+            <div>
+              <table>
+                <caption>
+                  Front-end web developer course 2021
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Person</th>
+                    <th scope="col">Most interest in</th>
+                    <th scope="col">Age</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Chris</th>
+                    <td>HTML tables</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Dennis</th>
+                    <td>Web accessibility</td>
+                    <td>45</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sarah</th>
+                    <td>JavaScript frameworks</td>
+                    <td>29</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Karen</th>
+                    <td>Web performance</td>
+                    <td>36</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th scope="row" colspan="2">Average age</th>
+                    <td>33</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </article>
+
+          <article>
+            <h2>Forms</h2>
+            <div>
+              <h3>Button</h3>
+              <button class="favorite styled" type="button">Add to favorites</button>
+            </div>
+
+            <div>
+              <h3>Datalist</h3>
+              <label for="ice-cream-choice">Choose a flavor:</label>
+              <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+              <datalist id="ice-cream-flavors">
+                <option value="Chocolate"></option>
+                <option value="Coconut"></option>
+                <option value="Mint"></option>
+                <option value="Strawberry"></option>
+                <option value="Vanilla"></option>
+              </datalist>
+            </div>
+
+            <div>
+              <h3>Fieldset</h3>
+              <form>
+                <fieldset>
+                  <legend>Choose your favorite monster</legend>
+              
+                  <input type="radio" id="kraken" name="monster" value="K" />
+                  <label for="kraken">Kraken</label><br />
+              
+                  <input type="radio" id="sasquatch" name="monster" value="S" />
+                  <label for="sasquatch">Sasquatch</label><br />
+              
+                  <input type="radio" id="mothman" name="monster" value="M" />
+                  <label for="mothman">Mothman</label>
+                </fieldset>
+              </form>
+            </div>
+
+            <div>
+              <h3>Form</h3>
+              <form action="" method="get" class="form-example">
+                <div class="form-example">
+                  <label for="name">Enter your name: </label>
+                  <input type="text" name="name" id="name" required />
+                </div>
+                <div class="form-example">
+                  <label for="email">Enter your email: </label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <div class="form-example">
+                  <input type="submit" value="Subscribe!" />
+                </div>
+              </form>
+            </div>>
+
+            <div>
+              <h3>Input</h3>
+              <label for="name">Name (4 to 8 characters):</label>
+              <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+            </div>
+
+            <div>
+              <h3>Label</h3>
+              <div class="preference">
+                <label for="cheese">Do you like cheese?</label>
+                <input type="checkbox" name="cheese" id="cheese" />
+              </div>
+              
+              <div class="preference">
+                <label for="peas">Do you like peas?</label>
+                <input type="checkbox" name="peas" id="peas" />
+              </div>            
+            </div>
+
+            <div>
+              <h3>Legend</h3>
+              <fieldset>
+                <legend>Choose your favorite monster</legend>
+              
+                <input type="radio" id="kraken" name="monster" value="K" />
+                <label for="kraken">Kraken</label><br />
+              
+                <input type="radio" id="sasquatch" name="monster" value="S" />
+                <label for="sasquatch">Sasquatch</label><br />
+              
+                <input type="radio" id="mothman" name="monster" value="M" />
+                <label for="mothman">Mothman</label>
+              </fieldset>
+            </div>
+
+            <div>
+              <h3>Meter</h3>
+              <label for="fuel">Fuel level:</label>
+              <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
+            </div>
+
+            <div>
+              <h3>Option Group</h3>
+              <label for="dino-select">Choose a dinosaur:</label>
+              <select id="dino-select">
+                <optgroup label="Theropods">
+                  <option>Tyrannosaurus</option>
+                  <option>Velociraptor</option>
+                  <option>Deinonychus</option>
+                </optgroup>
+                <optgroup label="Sauropods">
+                  <option>Diplodocus</option>
+                  <option>Saltasaurus</option>
+                  <option>Apatosaurus</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div>
+              <h3>Option</h3>
+              <label for="pet-select">Choose a pet:</label>
+              <select id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+                <option value="parrot">Parrot</option>
+                <option value="spider">Spider</option>
+                <option value="goldfish">Goldfish</option>
+              </select>
+            </div>
+
+            <div>
+              <h3>Output</h3>
+              <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" id="b" name="b" value="50" /> +
+                <input type="number" id="a" name="a" value="10" /> =
+                <output name="result" for="a b">60</output>
+              </form>            
+            </div>
+
+            <div>
+              <h3>Progress</h3>
+              <label for="file">File progress:</label>
+              <progress id="file" max="100" value="70">70%</progress>
+            </div>
+
+            <div>
+              <h3>Select</h3>
+              <label for="pet-select">Choose a pet:</label>
+              <select name="pets" id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+                <option value="parrot">Parrot</option>
+                <option value="spider">Spider</option>
+                <option value="goldfish">Goldfish</option>
+              </select>
+            </div>
+
+            <div>
+              <h3>Text Area</h3>
+              <label for="story">Tell us your story:</label>
+              <textarea id="story" name="story" rows="5" cols="33">
+              It was a dark and stormy night...
+              </textarea>
+            </div>
+          </article>
+
+          <article>
+            <h3>Interactive Elements</h3>
+            <div>
+              <h3>Details and Summary</h3>
+              <details>
+                <summary>Details</summary>
+                Something small enough to escape casual notice.
+              </details>              
+            </div>
+
+            <div>
+              <h3>Dialog</h3>
+              <dialog open>
+                <p>Greetings, one and all!</p>
+                <form method="dialog">
+                  <button>OK</button>
+                </form>
+              </dialog>              
+            </div>
+          </article>
+
+        </main>
+        <footer>
+            <p>The Basic CSS Framework was created by <a href="https://github.com/RowJCo">RowJCo</a></p>
+            <ul>
+            <li><small><a href="">GitHub</a></small></li>
+            <li><small><a href="">Download</a></small></li>
+            <li><small><a href="https://opensource.org/licenses/MIT">MIT license</a></small></li>
+            </ul>
+        </footer>
+    </body>
+</html>
