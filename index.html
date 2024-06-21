@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style-sheet.css">
+        <link rel="stylesheet" href="stylesheet.css">
         <title>Basic Style Sheet</title>
     </head>
 
@@ -22,8 +22,8 @@
             <div>
               <p>Contact the author of this page:</p>
               <address>
-                <a href="mailto:jim@example.com">jim@example.com</a><br />
-                <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+                <a href="mailto:jim@example.com" target="_blank" rel="noopener noreferrer">jim@example.com</a><br />
+                <a href="tel:+14155550132" target="_blank" rel="noopener noreferrer">+1 (415) 555‑0132</a>
               </address>
             </div>
           </article>
@@ -59,11 +59,8 @@
               <h6>Heading 6</h6>
 
               <h2>Hgroup</h2>
-              <p>This groups Headings together</p>
-            </div>
-            <div>
               <hgroup>
-                <h1>Frankenstein</h1>
+                <h3>Frankenstein</h3>
                 <p>Or: The Modern Prometheus</p>
               </hgroup>
               <p>
@@ -74,25 +71,25 @@
             </div>
           </article>
 
-          <article>
+          <section>
             <h2>Nav</h2>
             <div>
-              <nav class="crumbs">
+              <nav>
                 <ol>
-                  <li class="crumb"><a href="#">Bikes</a></li>
-                  <li class="crumb"><a href="#">BMX</a></li>
-                  <li class="crumb">Jump Bike 3000</li>
+                  <li><a href="#">Bikes</a></li>
+                  <li><a href="#">BMX</a></li>
+                  <li>Jump Bike 3000</li>
                 </ol>
               </nav>
             </div>
-          </article>
+          </section>
 
           <article>
             <h2>Search</h2>
             <div>
               <h3>Movie website</h3>
               <search>
-                <form action="./search/">
+                <form action="#">
                   <label for="movie">Find a Movie</label>
                   <input type="search" id="movie" name="q" />
                   <button type="submit">Search</button>
@@ -146,8 +143,14 @@
             <div>
               <h3>Menu (the same as an unordered list but with a different element name)</h3>
               <menu>
-                <li><button id="save">Save for later</button></li>
-                <li><button id="share">Share this news</button></li>
+                <li>Milk</li>
+                <li>
+                  Cheese
+                  <menu>
+                    <li>Blue cheese</li>
+                    <li>Feta</li>
+                  </menu>
+                </li>
               </menu>
             </div>
           </article>
@@ -166,9 +169,9 @@
               <h3>Anchor</h3>
               <p>You can reach Michael at:</p>
               <ul>
-                <li><a href="https://example.com">Website</a></li>
-                <li><a href="mailto:m.bluth@example.com">Email</a></li>
-                <li><a href="tel:+123456789">Phone</a></li>
+                <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Website</a></li>
+                <li><a href="mailto:m.bluth@example.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+                <li><a href="tel:+123456789" target="_blank" rel="noopener noreferrer">Phone</a></li>
               </ul>
             </div>
 
@@ -184,8 +187,8 @@
             <div>
               <h3>Bold</h3>
               <p>
-                The two most popular science courses offered by the school are <b class="term">chemistry</b> (the study of chemicals
-                and the composition of substances) and <b class="term">physics</b> (the study of the nature and properties of matter
+                The two most popular science courses offered by the school are <b>chemistry</b> (the study of chemicals
+                and the composition of substances) and <b>physics</b> (the study of the nature and properties of matter
                 and energy).
               </p>
             </div>
@@ -211,7 +214,7 @@
                   <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
                 </blockquote>
                 <figcaption>
-                  First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George
+                  First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html" target="_blank" rel="noopener noreferrer">Nineteen Eighty-Four</a></cite> by George
                   Orwell (Part 1, Chapter 1).
                 </figcaption>
               </figure>
@@ -237,7 +240,7 @@
 
             <div>
               <h3>Definition</h3>
-              <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+              <p>A <dfn>validator</dfn> is a program that checks for syntax errors in code or documents.</p>
             </div>
 
             <div>
@@ -335,10 +338,14 @@
 
             <div>
               <h3>Time</h3>
-              <p>The <em>Pythagorean theorem</em> is often expressed as the following equation:</p>
-
               <p>
-              <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var>
+                The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde
+                Park.
+              </p>
+              
+              <p>
+                The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least
+                <time datetime="PT2H30M">2h 30m</time>.
               </p>
             </div>
 
@@ -420,11 +427,6 @@
                 <source srcset="./media/cc0-images/surfer-240-200.jpg" media="(orientation: portrait)" />
                 <img src="./media/cc0-images/painted-hand-298-332.jpg" alt="" />
               </picture>
-            </div>
-
-            <div>
-              <h3>Portal</h3>
-              <portal id="exampleportal" src="https://rowjco.github.io/Basic-CSS-Framework/"></portal>
             </div>
           </article>
 
@@ -650,8 +652,8 @@
             </div>
           </article>
 
-          <article>
-            <h3>Interactive Elements</h3>
+          <section>
+            <h2>Interactive Elements</h2>
             <div>
               <h3>Details and Summary</h3>
               <details>
@@ -667,18 +669,27 @@
                 <form method="dialog">
                   <button>OK</button>
                 </form>
-              </dialog>              
+              </dialog>  
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />            
             </div>
-          </article>
-
+          </section>
         </main>
         <footer>
-            <p>The Basic CSS Framework was created by <a href="https://github.com/RowJCo">RowJCo</a></p>
-            <ul>
-            <li><small><a href="https://github.com/RowJCo/Basic-CSS-Framework">GitHub</a></small></li>
-            <li><small><a href="">Download</a></small></li>
-            <li><small><a href="https://opensource.org/licenses/MIT">MIT license</a></small></li>
-            </ul>
+            <p>The Basic CSS Framework was created by <a href="https://github.com/RowJCo" target="_blank" rel="noopener noreferrer">RowJCo</a></p>
+            <nav>
+              <ul>
+                <li><small><a href="https://github.com/RowJCo/Basic-CSS-Framework" target="_blank" rel="noopener noreferrer">GitHub</a></small></li>
+                <li><small><a href="">Download</a></small></li>
+                <li><small><a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT license</a></small></li>
+                </ul>
+            </nav>
         </footer>
     </body>
 </html>
